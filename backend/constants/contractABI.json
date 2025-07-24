@@ -1,0 +1,66 @@
+[
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_name", "type": "string" },
+      { "internalType": "uint256", "name": "_weight", "type": "uint256" },
+      {
+        "internalType": "uint256",
+        "name": "_bloodPressure",
+        "type": "uint256"
+      },
+      { "internalType": "uint256", "name": "_pulse", "type": "uint256" },
+      { "internalType": "uint256", "name": "userIndex", "type": "uint256" }
+    ],
+    "name": "addObject",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "userIndex", "type": "uint256" }
+    ],
+    "name": "getListLength",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "dataIndex", "type": "uint256" },
+      { "internalType": "uint256", "name": "userIndex", "type": "uint256" }
+    ],
+    "name": "getObject",
+    "outputs": [
+      { "internalType": "string", "name": "", "type": "string" },
+      { "internalType": "uint256", "name": "", "type": "uint256" },
+      { "internalType": "uint256", "name": "", "type": "uint256" },
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" },
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "name": "userDatas",
+    "outputs": [
+      { "internalType": "uint256", "name": "weight", "type": "uint256" },
+      { "internalType": "uint256", "name": "bloodPressure", "type": "uint256" },
+      { "internalType": "uint256", "name": "pulse", "type": "uint256" },
+      { "internalType": "string", "name": "name", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "name": "userListLength",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
